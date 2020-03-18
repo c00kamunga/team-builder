@@ -46,6 +46,9 @@ const Form = props => {
           value={formData.email}
           />
       </label>
+      <button>
+          submit this now
+      </button>
     </form>
   );
 };
