@@ -1,15 +1,10 @@
-import React, {useState} from 'react';
-
-const [teamList, setTeamList] = useState({});
-
-
+import React, { useState } from "react";
 
 function App() {
-  return (
-    <div className="App">
-     
-    </div>
-  );
+  const [teamList, setTeamList] = useState({});
+  return <div className="App">
+    <h1>Member List</h1>
+  </div>;
 }
 
 export default App;
