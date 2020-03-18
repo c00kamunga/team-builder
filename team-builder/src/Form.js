@@ -1,13 +1,17 @@
-import React from 'react';
+import React, {useState} from 'react';
 
-const Form = () => {
-
+const Form = (props) => {
+const[formData, setFormData] = useState({
+    name: '',
+    role: '',
+    role: ''
+})
 
 
 
 return (
 <div>
-    
+
 </div>
 );
 }
