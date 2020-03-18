@@ -1,4 +1,15 @@
 import React, { useState } from "react";
+import Form from './Form';
+import MemberCard from './MemberCard'; 
+import styled from 'styled-components';
+
+const StyledApp = styled.div`
+text-align: center;
+`
+
+
+
+
 
 function App() {
   const [teamList, setTeamList] = useState([
@@ -15,9 +26,13 @@ function App() {
 
 
   return (
-    <div className="App">
+    <StyledApp>
       <h1>Member List</h1>
-    </div>
+      <Form addMember={addMember}/>
+      {teamList.map((member, id) =>
+      <MemberCard member={member}/>
+      )}
+    </StyledApp>
   );
 }
 

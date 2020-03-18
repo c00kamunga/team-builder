@@ -13,9 +13,9 @@ const Form = props => {
   };
 
   const handleSubmit = event => {
-    event.prevent.Default();
+    event.preventDefault();
     props.addMember(formData);
-    setFormData({ name: "", role: "", role: "" });
+    setFormData({ name: "", role: "", email: "" });
   };
 
   return (
@@ -44,10 +44,11 @@ const Form = props => {
           type='text'
           name='email'
           value={formData.email}
+          onChange={handleChange}
           />
       </label>
       <button>
-          submit this now
+          click to submit form
       </button>
     </form>
   );
