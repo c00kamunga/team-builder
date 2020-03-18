@@ -30,6 +30,15 @@ const Form = props => {
         />
       </label>
       <label>
+          role:
+          <input
+          type='text'
+          name='role'
+          value={formData.role}
+          onChange={handleChange}
+          />
+      </label>
+      <label>
           email:
           <input
           type='text'
@@ -37,7 +46,6 @@ const Form = props => {
           value={formData.email}
           />
       </label>
-      
     </form>
   );
 };
