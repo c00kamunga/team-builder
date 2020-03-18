@@ -29,6 +29,15 @@ const Form = props => {
           onChange={handleChange}
         />
       </label>
+      <label>
+          email:
+          <input
+          type='text'
+          name='email'
+          value={formData.email}
+          />
+      </label>
+      
     </form>
   );
 };
