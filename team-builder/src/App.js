@@ -11,7 +11,7 @@ function App() {
     console.log(member)
     setTeamList([...teamList, member])
   }
-
+ 
 
 
   return (
